@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
       
-      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden grid md:grid-cols-2">
+      <div className="bg-white rounded-[32px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden grid md:grid-cols-2">
         
         {/* LEFT IMAGE */}
         <div className="relative h-[500px] md:h-auto">
@@ -52,14 +52,26 @@ export default function Home() {
           </h1>
 
           {/* Social Buttons */}
-          <div className="flex gap-4 mb-6">
-            <button className="flex-1 bg-purple-600 text-white py-3 rounded-full font-medium hover:bg-purple-700 transition">
+          <div className="flex flex-col sm:flex-row gap-4 mb-6">
+            
+            <button className="flex-1 flex items-center justify-center gap-3 bg-purple-600 text-white py-3 rounded-full font-medium hover:bg-purple-700 transition">
+              <img
+                src="/icons/google.svg"
+                alt="Google"
+                className="w-5 h-5"
+              />
               Sign up with Google
             </button>
 
-            <button className="flex-1 bg-gray-200 text-gray-700 py-3 rounded-full font-medium hover:bg-gray-300 transition">
+            <button className="flex-1 flex items-center justify-center gap-3 bg-gray-200 text-gray-700 py-3 rounded-full font-medium hover:bg-gray-300 transition">
+              <img
+                src="/icons/facebook.svg"
+                alt="Facebook"
+                className="w-5 h-5"
+              />
               With Facebook
             </button>
+
           </div>
 
           <p className="text-sm text-gray-500 mb-6">
